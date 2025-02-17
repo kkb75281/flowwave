@@ -9,7 +9,12 @@
 <style lang="less" scoped>
 #logo-wrap {
 	position: relative;
+	// display: block;
+	// margin: 0 auto;
+	display: inline-block;
+	text-align: center;
 	cursor: pointer;
+	user-select: none;
 
 	&:hover {
 		.hover {
@@ -19,7 +24,7 @@
 }
 
 .text-wrap {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;

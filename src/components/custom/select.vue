@@ -50,6 +50,7 @@ let toggleOption = ref(false);
 		margin-top: 4px;
 		border-radius: 8px;
 		box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+		background-color: #fff;
 		overflow: hidden;
 		z-index: 1;
 

@@ -1,19 +1,20 @@
 <template lang="pug">
-br
+Header
 
-Logo(@click="router.push('/')")
-
-main
+main#main
 	router-view
 </template>
 
 <script setup lang="ts">
 import { useRoute, useRouter } from 'vue-router';
+import { ref } from 'vue';
 
-import Logo from '@/components/Logo.vue';
+import Header from '@/components/Header.vue';
 
 const router = useRouter();
 const route = useRoute();
 </script>
 
-<style scoped lang="less"></style>
+<style scoped lang="less">
+
+</style>

@@ -1,6 +1,6 @@
 <template lang="pug">
 #custom-password
-	input#password(:type='showPassword ? "text" : "password"' type="password" placeholder="password")
+	input#password(:type='showPassword ? "text" : "password"' name="password" type="password" placeholder="Enter password" :disabled="props.disabled" required)
 	svg.lock
 		use(xlink:href="@/assets/icon/material-icon.svg#icon-lock")
 	svg.eye(@click="showPassword = !showPassword")
@@ -11,7 +11,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
+
+let props = defineProps(['disabled']);
 
 let showPassword = ref(false);
 </script>
